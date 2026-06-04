@@ -87,7 +87,7 @@ class Cat(Pet):
         game = random.choice(cat_games)
 
       # playing makes the cat happier.
-        self.happiness = min(10, self.happines + 2)
+        self.happiness = min(10, self.happiness + 2)
 
       # Cats use slightly less energy than dogs in this game.
         self.energy = max(0, self.energy - 1)
