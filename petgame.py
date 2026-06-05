@@ -3,13 +3,22 @@
 import random
 import time
 
+# Base class: Pet
+# Subclasses: Dog, Cat
+# Attributes: name, hunger, happiness, energy. (Attributes are things an object HAS.)
+# Methods: eat(), sleep(), play(), show_status(). (Methods are things an object DOES.)
+# Different behaviour: Dog and Cat have different play() methods
+# Interaction: user chooses pet, feeds it, plays, sleeps, checks status, quits
+
 # This is our base class / parent class.
 #A class is like a blueprint for creating something.
 #In this case the blueprint is for a virtual pet.
 
 class Pet:
-    #This method runs automatically when we create a new pet.
+ #This method runs automatically when we create a new pet.
     # It gives the pet a name and starting values.
+    #"__init__ is used to initialize new objects with starting values. 
+    # self, refers to the current object and allows each pet to store and manage its own data independently."
     def __init__(self, name):
         self.name = name
         self.hunger = 5
